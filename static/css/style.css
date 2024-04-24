@@ -353,7 +353,7 @@ header .content .textBox .desc{
     grid-auto-flow: row;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 610px);
+    grid-template-columns: repeat(auto-fit, 30rem);
     gap: 20px;
     width: 100%;
 }
