@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poiret+One&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+*{
+    /* Fonts */
+    /* font-family: "Dancing Script", cursive; */
+    /* font-family: "Bad Script", cursive; */
+    /* font-family: "Poiret One", sans-serif; */
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+.navLink{
+    font-family: "Roboto", sans-serif;
+}
+
+p, .heading{
+    font-family: "Open Sans", sans-serif;
+}
+
+footer{
+    font-family: "Roboto", sans-serif;
+}
