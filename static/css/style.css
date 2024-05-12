@@ -695,8 +695,8 @@ header .content .textBox .desc{
     .serviceBox .textBox p{
         font-size: 1rem;
     }
-    #teamSlider .slidesBox .slide{
-        padding: 7% 7%;
+    #teamSlider .slidesBox .slide .content, #teamSlider .slidesBox .slide .dpContainer{
+        padding: 13% 10%;
     }
     #teamSlider .slidesBox .slide .desc{
         font-size: 0.9rem;
