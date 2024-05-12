@@ -339,12 +339,19 @@ header .content .textBox .desc{
 }
 
 /* Team Section */
+#teamSection{
+    background-color: var(--brand_blue);
+}
+#teamSection .sectionHeading{
+    color: white;
+}
+
 #teamSlider{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    position: relative;
 }
 
 
@@ -355,9 +362,10 @@ header .content .textBox .desc{
     gap: 10px;
     position: absolute;
     bottom: 15px;
+    transition: 0.7s;
 }
 
-#teamSlider .dotBox .dot{
+#teamSlider .dotBox > .dot{
     height: 10px;
     width: 10px;
     border-radius: 100%;
@@ -370,25 +378,71 @@ header .content .textBox .desc{
 
 /* Slide Box and Slides */
 #teamSlider .slidesBox{
-    display: grid;
+    /* display: grid;
     grid-auto-flow: row;
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 30rem);
     gap: 20px;
+    width: 100%; */
+
+    position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background: none;
+    border-radius: 20px;
+    /* box-shadow: 1px 1px 14px rgb(222, 222, 222); */
 }
 
 #teamSlider .slidesBox .slide{
+    transition: 2s;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    /* border-right: 10px solid transparent; */
+    
+    /* animation-name: SlideAnimation;
+    animation-duration: 5s; 
+    animation-delay: 2s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    animation-direction: alternate; */
+}
+
+#teamSlider .slidesBox .slide .content{ 
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 15px rgb(225, 225, 225);
-    padding: 10% 10%;
-    transition: 0.5s;
+    background-color: white;
+}
+
+#teamSlider .slidesBox .slide .dpContainer{
+    padding: 5%;
+    background-color: #7a00ff;
+    /* background-color: #005ed1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes SlideAnimation {
+    0%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(-100%); 
+    }
+    20%{
+        transform: translateX(-200%); 
+    }
+    60%, 100%{
+        transform: translateX(-300%);
+    }
 }
 
 #teamSlider .slidesBox .slide:hover{
@@ -403,13 +457,13 @@ header .content .textBox .desc{
     font-style: italic;
 }
 
-#teamSlider .slidesBox .slide .dpBox{
+#teamSlider .slidesBox .slide .dpContainer .dpBox{
     border-radius: 100%;
     overflow: hidden;
     width: 200px;
     height: 200px;
-    border: 5px solid white;
-    outline: 5px solid #f15a24;
+    border: 5px solid #7a00ff;
+    outline: 5px solid white;
     /* padding: 5px; */
 }
 
